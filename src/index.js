@@ -5,7 +5,7 @@ import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App darkMode={true} />
   </React.StrictMode>,
   document.getElementById('root')
 );

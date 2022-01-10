@@ -6,3 +6,9 @@
      *    as an empty square (black border, transparent bg color)
      *    (Don't worry about using the "on" property yet)
      */
+
+
+
+    // Challenge: use a ternary to determine the backgroundColor.
+    // If darkMode is true, set it to dark
+    // If darkMode is false, set it to light
