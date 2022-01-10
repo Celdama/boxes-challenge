@@ -6,7 +6,7 @@ const App = ({ darkMode }) => {
   const [squares, setSquares] = useState(boxes);
 
   const styles = {
-    backgroundColor: darkMode ? 'transparent' : '#fff',
+    backgroundColor: darkMode ? '#222' : '#ccc',
   };
 
   const squareElements = squares.map(({ id }) => (
