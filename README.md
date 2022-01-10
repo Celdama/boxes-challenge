@@ -23,3 +23,13 @@ _ 3. In the Box component, apply dynamic styles to determine
 _ the backgroundColor of the box. If it's `on`, set the
 _ backgroundColor to "#222222". If off, set it to "none"
 \*/
+
+/\*\*
+_ Challenge: Create state controlling whether
+_ this box is "on" or "off". Use the incoming
+_ `props.on` to determine the initial state.
+_
+_ Create an event listener so when the box is clicked,
+_ it toggles from "on" to "off". \*
+_ Goal: clicking each box should toggle it on and off.
+_/

@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Box = ({ on }) => {
-  const style = {
-    backgroundColor: on ? '#222' : 'none',
+  const [isOnOff, setIsOnOff] = useState(on);
+
+  const toggleOnOff = () => {
+    setIsOnOff((prevState) => !prevState);
   };
 
-  return <div style={style} className='box'></div>;
+  const style = {
+    backgroundColor: isOnOff ? '#222' : 'transparent',
+  };
+
+  return <div style={style} onClick={toggleOnOff} className='box'></div>;
 };
 
 export default Box;
