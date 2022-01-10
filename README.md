@@ -33,3 +33,19 @@ _ Create an event listener so when the box is clicked,
 _ it toggles from "on" to "off". \*
 _ Goal: clicking each box should toggle it on and off.
 _/
+
+/\*\*
+_ Challenge: Create a toggle() function that logs
+_ "clicked!" to the console \*
+_ Pass that function down to each of the Box components
+_ and set it up so when they get clicked it runs the function
+\*/
+
+/\*\*
+_ Challenge: use setSquares to update the
+_ correct square in the array. \*
+_ Make sure not to directly modify state!
+_
+_ Hint: look back at the lesson on updating arrays
+_ in state if you need a reminder on how to do this
+\*/

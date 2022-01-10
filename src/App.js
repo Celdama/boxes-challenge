@@ -6,7 +6,17 @@ import './app.css';
 const App = ({ darkMode }) => {
   const [squares, setSquares] = useState(boxes);
 
-  const squareElements = squares.map(({ id, on }) => <Box key={id} on={on} />);
+  const toggle = (id) => {
+    setSquares((prevState) => {
+      return prevState.map((square) => {
+        return square.id === id ? { ...square, on: !square.on } : square;
+      });
+    });
+  };
+
+  const squareElements = squares.map(({ id, on }) => (
+    <Box key={id} toggle={() => toggle(id)} on={on} />
+  ));
 
   return (
     <main>
