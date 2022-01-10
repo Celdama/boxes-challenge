@@ -1,17 +1,12 @@
 import React, { useState } from 'react';
 import boxes from './boxes';
+import Box from './components/Box';
 import './app.css';
 
 const App = ({ darkMode }) => {
   const [squares, setSquares] = useState(boxes);
 
-  const styles = {
-    backgroundColor: darkMode ? '#222' : '#ccc',
-  };
-
-  const squareElements = squares.map(({ id }) => (
-    <div style={styles} key={id} className='box'></div>
-  ));
+  const squareElements = squares.map(({ id, on }) => <Box key={id} on={on} />);
 
   return (
     <main>
